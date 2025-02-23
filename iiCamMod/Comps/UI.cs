@@ -28,7 +28,7 @@ namespace iiCamMod.Comps
         {
             if (uiopen)
             {
-                GUI.Box(new Rect(30f, 50f, 170f, 270f), "Yizzi's Camera Mod");
+                GUI.Box(new Rect(30f, 50f, 170f, 270f), "ii's Camera Mod");
                 if (GUI.Button(new Rect(35f, 70f, 160f, 20f), "FreeCam"))
                 {
                     if (spectating)
