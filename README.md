@@ -13,3 +13,5 @@ A fork of the camera mod "[YizziCamModV2](https://github.com/Yizzii/YizziCamModV
 ### *Controls:*
 * Reset camera with `X` + `Y` + `Right Joystick Up`
 * Hold grip to grab camera
+
+> This product is not affiliated with Gorilla Tag or Another Axiom LLC and is not endorsed or otherwise sponsored by Another Axiom LLC. Portions of the materials contained herein are property of Another Axiom LLC. © 2025 Another Axiom LLC.
