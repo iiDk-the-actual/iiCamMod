@@ -31,6 +31,6 @@ namespace iiCamMod
         }
 
         private static Harmony instance;
-        public const string InstanceId = "com.yizzi.gorillatag.yizzicammodv2";
+        public const string InstanceId = PluginInfo.GUID;
     }
 }

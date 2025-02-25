@@ -19,8 +19,8 @@ namespace iiCamMod
         public void YizziStart()
         {
             gameObject.AddComponent<InputManager>().gameObject.AddComponent<UI>();
-            ColorScreenGO = LoadBundle("ColorScreen", "NotYizziCamera.Assets.colorscreen");
-            CameraTablet = LoadBundle("CameraTablet", "NotYizziCamera.Assets.yizzicam");
+            ColorScreenGO = LoadBundle("ColorScreen", "iiCamMod.Assets.colorscreen");
+            CameraTablet = LoadBundle("CameraTablet", "iiCamMod.Assets.yizzicam");
             FirstPersonCameraGO = GorillaTagger.Instance.mainCamera;
             ThirdPersonCameraGO = GameObject.Find("Player Objects/Third Person Camera/Shoulder Camera");
             CMVirtualCameraGO = GameObject.Find("Player Objects/Third Person Camera/Shoulder Camera/CM vcam1");
