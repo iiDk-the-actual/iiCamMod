@@ -38,7 +38,7 @@ namespace iiCamMod.Comps
                     }
                     if (freecam)
                     {
-                        CameraController.Instance.CameraTablet.transform.position = Player.Instance.headCollider.transform.position + Player.Instance.headCollider.transform.forward;
+                        CameraController.Instance.CameraTablet.transform.position = GTPlayer.Instance.headCollider.transform.position + GTPlayer.Instance.headCollider.transform.forward;
                     }
                     if (!CameraController.Instance.flipped)
                     {
@@ -65,7 +65,7 @@ namespace iiCamMod.Comps
                 if (GUI.Button(new Rect(140f, 90f, 45f, 20f), "Stop") && spectating)
                 {
                     followobject = null;
-                    CameraController.Instance.CameraTablet.transform.position = Player.Instance.headCollider.transform.position + Player.Instance.headCollider.transform.forward;
+                    CameraController.Instance.CameraTablet.transform.position = GTPlayer.Instance.headCollider.transform.position + GTPlayer.Instance.headCollider.transform.forward;
                     spectating = false;
                 }
                 if (GUI.Button(new Rect(35f, 110f, 160f, 20f), "Load All Maps(PRIVS)") && !PhotonNetwork.CurrentRoom.IsVisible)
@@ -286,7 +286,7 @@ namespace iiCamMod.Comps
             }
             else if (spectating)
             {
-                CameraController.Instance.CameraTablet.transform.position = Player.Instance.headCollider.transform.position + Player.Instance.headCollider.transform.forward;
+                CameraController.Instance.CameraTablet.transform.position = GTPlayer.Instance.headCollider.transform.position + GTPlayer.Instance.headCollider.transform.forward;
                 spectating = false;
             }
         }

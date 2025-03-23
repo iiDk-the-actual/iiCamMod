@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace iiCamMod.Patches
 {
-    [HarmonyPatch(typeof(Player), "LateUpdate")]
+    [HarmonyPatch(typeof(GTPlayer), "LateUpdate")]
     internal class LocomotionPatch
     {
         private static void Postfix()

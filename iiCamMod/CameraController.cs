@@ -117,7 +117,7 @@ namespace iiCamMod
             if (init)
             {
                 ThirdPersonCamera.fieldOfView = TabletCamera.fieldOfView;
-                ThirdPersonCamera.nearClipPlane = TabletCamera.nearClipPlane * Player.Instance.scale;
+                ThirdPersonCamera.nearClipPlane = TabletCamera.nearClipPlane * GTPlayer.Instance.scale;
                 if (fpv)
                 {
                     if (MainPage.activeSelf)
@@ -149,8 +149,8 @@ namespace iiCamMod
                         }
                         MainPage.SetActive(true);
                     }
-                    CameraTablet.transform.position = Player.Instance.headCollider.transform.position + Player.Instance.headCollider.transform.forward;
-                    CameraTablet.transform.LookAt(Player.Instance.headCollider.transform.position);
+                    CameraTablet.transform.position = GTPlayer.Instance.headCollider.transform.position + GTPlayer.Instance.headCollider.transform.forward;
+                    CameraTablet.transform.LookAt(GTPlayer.Instance.headCollider.transform.position);
                     if (flipped)
                     {
                         flipped = false;
@@ -226,7 +226,7 @@ namespace iiCamMod
                     }
                     if (ControllerInputPoller.instance.rightControllerPrimary2DAxis.y > 0.8f && ControllerInputPoller.instance.leftControllerPrimaryButton && ControllerInputPoller.instance.leftControllerSecondaryButton)
                     {
-                        CameraTablet.transform.position = Player.Instance.headCollider.transform.position + Player.Instance.headCollider.transform.forward;
+                        CameraTablet.transform.position = GTPlayer.Instance.headCollider.transform.position + GTPlayer.Instance.headCollider.transform.forward;
                         foreach (MeshRenderer meshRenderer4 in meshRenderers)
                         {
                             meshRenderer4.enabled = true;
