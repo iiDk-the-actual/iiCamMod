@@ -425,9 +425,9 @@ namespace iiCamMod.Comps
                                             return;
                                         }
                                         CameraController.Instance.smoothing += 0.01f;
-                                        if (CameraController.Instance.smoothing > 0.11f)
+                                        if (CameraController.Instance.smoothing > 1f)
                                         {
-                                            CameraController.Instance.smoothing = 0.05f;
+                                            CameraController.Instance.smoothing = 0f;
                                         }
                                         CameraController.Instance.SmoothText.text = CameraController.Instance.smoothing.ToString();
                                         CameraController.Instance.canbeused = true;
@@ -471,9 +471,9 @@ namespace iiCamMod.Comps
                                 return;
                             }
                             CameraController.Instance.smoothing -= 0.01f;
-                            if (CameraController.Instance.smoothing < 0.05f)
+                            if (CameraController.Instance.smoothing < 0f)
                             {
-                                CameraController.Instance.smoothing = 0.11f;
+                                CameraController.Instance.smoothing = 1f;
                             }
                             CameraController.Instance.SmoothText.text = CameraController.Instance.smoothing.ToString();
                             CameraController.Instance.canbeused = true;
