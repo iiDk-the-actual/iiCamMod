@@ -1,4 +1,4 @@
-﻿using Cinemachine;
+﻿using Unity.Cinemachine;
 using GorillaLocomotion;
 using iiCamMod.Comps;
 using System.Collections.Generic;
